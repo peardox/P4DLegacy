@@ -1,5 +1,12 @@
 {$I ..\Definition.Inc}
 
+{$IFDEF DELPHI10_3_OR_HIGHER}
+// There's no DELPHI10_2_OR_LOWER
+{$ELSE}
+{$WARN SYMBOL_PLATFORM OFF}
+{$ENDIF}
+
+
 unit WrapVclDialogs;
 
 interface
