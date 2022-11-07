@@ -1,0 +1,79 @@
+package PythonFmx;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Python4Delphi - Run-time Engine Package for FMX'}
+{$IFDEF VER200}{$LIBSUFFIX '120'} {$ENDIF}
+{$IFDEF VER210}{$LIBSUFFIX '140'} {$ENDIF}
+{$IFDEF VER220}{$LIBSUFFIX '150'} {$ENDIF}
+{$IFDEF VER230}{$LIBSUFFIX '160'} {$ENDIF}
+{$IFDEF VER240}{$LIBSUFFIX '170'} {$ENDIF}
+{$IFDEF VER250}{$LIBSUFFIX '180'} {$ENDIF}
+{$IFDEF VER260}{$LIBSUFFIX '190'} {$ENDIF}
+{$IFDEF VER270}{$LIBSUFFIX '200'} {$ENDIF}
+{$IFDEF VER280}{$LIBSUFFIX '210'} {$ENDIF}
+{$IFDEF VER200}{$LIBSUFFIX '220'} {$ENDIF}
+{$IFDEF VER300}{$LIBSUFFIX '230'} {$ENDIF}
+{$IFDEF VER310}{$LIBSUFFIX '240'} {$ENDIF}
+{$IFDEF VER320}{$LIBSUFFIX '250'} {$ENDIF}
+{$IFDEF VER330}{$LIBSUFFIX '260'} {$ENDIF}
+{$IFDEF VER340}{$LIBSUFFIX '270'} {$ENDIF}
+
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  fmx,
+  bindcompfmx,
+  python;
+
+contains
+  FMX.PythonGUIInputOutput in '..\..\..\Source\fmx\FMX.PythonGUIInputOutput.pas',
+  WrapDelphiFmx in '..\..\..\Source\fmx\WrapDelphiFmx.pas',
+  WrapFmxActnList in '..\..\..\Source\fmx\WrapFmxActnList.pas',
+  WrapFmxColors in '..\..\..\Source\fmx\WrapFmxColors.pas',
+  WrapFmxComCtrls in '..\..\..\Source\fmx\WrapFmxComCtrls.pas',
+  WrapFmxControls in '..\..\..\Source\fmx\WrapFmxControls.pas',
+  WrapFmxDataBind in '..\..\..\Source\fmx\WrapFmxDataBind.pas',
+  WrapFmxDialogs in '..\..\..\Source\fmx\WrapFmxDialogs.pas',
+  WrapFmxEdit in '..\..\..\Source\fmx\WrapFmxEdit.pas',
+  WrapFmxForms in '..\..\..\Source\fmx\WrapFmxForms.pas',
+  WrapFmxGrids in '..\..\..\Source\fmx\WrapFmxGrids.pas',
+  WrapFmxLayouts in '..\..\..\Source\fmx\WrapFmxLayouts.pas',
+  WrapFmxListBox in '..\..\..\Source\fmx\WrapFmxListBox.pas',
+  WrapFmxListView in '..\..\..\Source\fmx\WrapFmxListView.pas',
+  WrapFmxMedia in '..\..\..\Source\fmx\WrapFmxMedia.pas',
+  WrapFmxMemo in '..\..\..\Source\fmx\WrapFmxMemo.pas',
+  WrapFmxMenus in '..\..\..\Source\fmx\WrapFmxMenus.pas',
+  WrapFmxScrollBox in '..\..\..\Source\fmx\WrapFmxScrollBox.pas',
+  WrapFmxShapes in '..\..\..\Source\fmx\WrapFmxShapes.pas',
+  WrapFmxStdActns in '..\..\..\Source\fmx\WrapFmxStdActns.pas',
+  WrapFmxStdCtrls in '..\..\..\Source\fmx\WrapFmxStdCtrls.pas',
+  WrapFmxStyles in '..\..\..\Source\fmx\WrapFmxStyles.pas',
+  WrapFmxTypes in '..\..\..\Source\fmx\WrapFmxTypes.pas';
+
+end.
