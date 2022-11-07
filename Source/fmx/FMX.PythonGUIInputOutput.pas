@@ -13,7 +13,11 @@ uses
   PythonEngine;
 
 const
+  {$IFDEF DELPHI10_3_OR_HIGHER}
   PID_SUPPORTED_PLATFORMS = pidAllPlatforms;
+  {$ELSE}
+  PID_SUPPORTED_PLATFORMS = $0000FFFF;
+  {$ENDIF}
 
 type
   [ComponentPlatformsAttribute(PID_SUPPORTED_PLATFORMS)]

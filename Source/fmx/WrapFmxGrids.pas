@@ -1,3 +1,12 @@
+{$I ..\Definition.Inc}
+
+{$IFNDEF DELPHI10_4}
+  {$DEFINE UNSUPPORTED}
+{$ENDIF}
+{$IFDEF LINUX}
+  {$DEFINE UNSUPPORTED}
+{$ENDIF}
+
 unit WrapFmxGrids;
 
 interface
@@ -45,7 +54,7 @@ type
     // Properties
     property DelphiObject: TCheckColumn read GetDelphiObject write SetDelphiObject;
   end;
-
+{$IFNDEF UNSUPPORTED}
   TPyDelphiDateTimeColumnBase = class(TPyDelphiColumn)
   private
     function  GetDelphiObject: TDateTimeColumnBase;
@@ -85,7 +94,7 @@ type
     // Properties
     property DelphiObject: TDateColumn read GetDelphiObject write SetDelphiObject;
   end;
-
+{$ENDIF}
   TPyDelphiPopupColumn = class(TPyDelphiColumn)
   private
     function  GetDelphiObject: TPopupColumn;
@@ -220,10 +229,12 @@ begin
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiStringColumn);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiProgressColumn);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCheckColumn);
+{$IFNDEF UNSUPPORTED}
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiDateTimeColumnBase);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiDateTimeColumn);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiTimeColumn);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiDateColumn);
+{$ENDIF}
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiPopupColumn);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiImageColumn);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCustomNumberColumn);
@@ -305,7 +316,7 @@ begin
 end;
 
 { TPyDelphiDateTimeColumnBase }
-
+{$IFNDEF UNSUPPORTED}
 class function TPyDelphiDateTimeColumnBase.DelphiObjectClass: TClass;
 begin
   Result := TDateTimeColumnBase;
@@ -372,7 +383,7 @@ procedure TPyDelphiDateColumn.SetDelphiObject(const Value: TDateColumn);
 begin
   inherited DelphiObject := Value;
 end;
-
+{$ENDIF}
 { TPyDelphiPopupColumn }
 
 class function TPyDelphiPopupColumn.DelphiObjectClass: TClass;
