@@ -48,7 +48,7 @@
         <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;$(DCC_Namespace)</DCC_Namespace>
         <DesignOnlyPackage>true</DesignOnlyPackage>
-        <DllSuffix>230</DllSuffix>
+        <DllSuffix>220</DllSuffix>
         <GenDll>true</GenDll>
         <GenPackage>true</GenPackage>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
@@ -74,7 +74,7 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
-        <DCC_DebugInformation>False</DCC_DebugInformation>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>

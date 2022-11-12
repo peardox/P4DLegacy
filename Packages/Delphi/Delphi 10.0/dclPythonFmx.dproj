@@ -76,7 +76,7 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
-        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_DebugInformation>False</DCC_DebugInformation>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>

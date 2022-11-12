@@ -50,7 +50,7 @@
         <DCC_Description>Python4Delphi - Run-time Engine Package</DCC_Description>
         <DCC_ImageBase>00400000</DCC_ImageBase>
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;DUnitX.Loggers.GUI;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
-        <DllSuffix>230</DllSuffix>
+        <DllSuffix>220</DllSuffix>
         <GenDll>true</GenDll>
         <GenPackage>true</GenPackage>
         <RuntimeOnlyPackage>true</RuntimeOnlyPackage>
@@ -73,7 +73,7 @@
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
-        <DCC_DebugInformation>False</DCC_DebugInformation>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
